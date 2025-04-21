@@ -77,7 +77,7 @@
         <a class="home__button" href="#contact">Contact Me</a>
       </section>
       <!-- About -->
-      <section id="about" class="section max-width about">
+      <section id="about" class="section max-container about">
         <header class="section__header">
           <h2 class="section__header-title">About me</h2>
           <p class="section__header-description">
@@ -117,7 +117,7 @@
       </section>
       <!-- Skills -->
       <section id="skills" class="section skills">
-        <div class="skills__container max-width">
+        <div class="skills__container max-container">
           <header class="section__header">
             <h2 class="section__header-title">My Skills</h2>
             <p class="section__header-description">Skills &amp; Attributes</p>
@@ -177,6 +177,7 @@
               <ul>
                 <li>Visual Studio Code</li>
                 <li>Intellij</li>
+                <li>EditPlus</li>
                 <li>Git</li>
               </ul>
             </section>
@@ -185,143 +186,166 @@
       </section>
       <!-- Work -->
       <section id="work" class="section work">
-        <header class="section__header">
-          <h2 class="section__header-title">My work</h2>
-          <p class="section__header-description">Projects</p>
-        </header>
-        <ul>
-          <li>
-            <button type="button">All <span>11</span></button>
-          </li>
-          <li>
-            <button type="button">Website <span>8</span></button>
-          </li>
-          <li>
-            <button type="button">Promotion <span>3</span></button>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="#" target="_blank">
-              <img src="assets/images/projects/project_1.webp" alt="유암코" />
-              <div>
-                <h3>유암코</h3>
-                <p>설명</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img
-                src="assets/images/projects/project_2.webp"
-                alt="와이낫로드"
-              />
-              <div>
-                <h3>와이낫로드</h3>
-                <p>설명</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img
-                src="assets/images/projects/project_3.webp"
-                alt="한국관광공사"
-              />
-              <div>
-                <h3>한국관광공사</h3>
-                <p>설명</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img
-                src="assets/images/projects/project_4.webp"
-                alt="유아이비코리아"
-              />
-              <div>
-                <h3>유아이비코리아</h3>
-                <p>설명</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img
-                src="assets/images/projects/project_5.webp"
-                alt="한국결핵연구소"
-              />
-              <div>
-                <h3>한국결핵연구소</h3>
-                <p>설명</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="assets/images/projects/project_6.webp" alt="HK테일러" />
-              <div>
-                <h3>HK테일러</h3>
-                <p>설명</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img
-                src="assets/images/projects/project_7.webp"
-                alt="비디오빌리지"
-              />
-              <div>
-                <h3>비디오빌리지</h3>
-                <p>설명</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img
-                src="assets/images/projects/project_8.webp"
-                alt="참엔지니어링"
-              />
-              <div>
-                <h3>참엔지니어링</h3>
-                <p>설명</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img
-                src="assets/images/projects/project_9.webp"
-                alt="유한킴벌리"
-              />
-              <div>
-                <h3>유한킴벌리</h3>
-                <p>설명</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="assets/images/projects/project_10.webp" alt="세스코" />
-              <div>
-                <h3>세스코</h3>
-                <p>설명</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="assets/images/projects/project_11.webp" alt="HL만도" />
-              <div>
-                <h3>HL만도</h3>
-                <p>설명</p>
-              </div>
-            </a>
-          </li>
-        </ul>
+        <div class="work__container max-container">
+          <header class="section__header">
+            <h2 class="section__header-title">My work</h2>
+            <p class="section__header-description">Projects</p>
+          </header>
+          <ul class="work-category">
+            <li class="work-category__list">
+              <button
+                class="work-category__item work-category__item--selected"
+                type="button"
+              >
+                All
+                <span class="work-category__count">11</span>
+              </button>
+            </li>
+            <li class="work-category__list">
+              <button class="work-category__item" type="button">
+                Website
+                <span class="work-category__count">8</span>
+              </button>
+            </li>
+            <li class="work-category__list">
+              <button class="work-category__item" type="button">
+                Promotion
+                <span class="work-category__count">3</span>
+              </button>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#" target="_blank">
+                <img src="assets/images/projects/project_1.webp" alt="유암코" />
+                <div>
+                  <h3>유암코</h3>
+                  <p>설명</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img
+                  src="assets/images/projects/project_2.webp"
+                  alt="와이낫로드"
+                />
+                <div>
+                  <h3>와이낫로드</h3>
+                  <p>설명</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img
+                  src="assets/images/projects/project_3.webp"
+                  alt="한국관광공사"
+                />
+                <div>
+                  <h3>한국관광공사</h3>
+                  <p>설명</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img
+                  src="assets/images/projects/project_4.webp"
+                  alt="유아이비코리아"
+                />
+                <div>
+                  <h3>유아이비코리아</h3>
+                  <p>설명</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img
+                  src="assets/images/projects/project_5.webp"
+                  alt="한국결핵연구소"
+                />
+                <div>
+                  <h3>한국결핵연구소</h3>
+                  <p>설명</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img
+                  src="assets/images/projects/project_6.webp"
+                  alt="HK테일러"
+                />
+                <div>
+                  <h3>HK테일러</h3>
+                  <p>설명</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img
+                  src="assets/images/projects/project_7.webp"
+                  alt="비디오빌리지"
+                />
+                <div>
+                  <h3>비디오빌리지</h3>
+                  <p>설명</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img
+                  src="assets/images/projects/project_8.webp"
+                  alt="참엔지니어링"
+                />
+                <div>
+                  <h3>참엔지니어링</h3>
+                  <p>설명</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img
+                  src="assets/images/projects/project_9.webp"
+                  alt="유한킴벌리"
+                />
+                <div>
+                  <h3>유한킴벌리</h3>
+                  <p>설명</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img
+                  src="assets/images/projects/project_10.webp"
+                  alt="세스코"
+                />
+                <div>
+                  <h3>세스코</h3>
+                  <p>설명</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img
+                  src="assets/images/projects/project_11.webp"
+                  alt="HL만도"
+                />
+                <div>
+                  <h3>HL만도</h3>
+                  <p>설명</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Testimonials -->
       <section id="testimonials" class="section testimonials">
