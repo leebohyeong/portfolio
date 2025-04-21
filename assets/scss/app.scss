@@ -338,3 +338,20 @@
         }
     }
 }
+
+/* Arrow Up */
+.arrow-up {
+    &__button {
+        position: fixed;
+        right: 3rem;
+        bottom: 3rem;
+        width: 4.5rem;
+        height: 4.5rem;
+        background-color: var(--color-primary);
+        border-radius: 100%;
+        box-shadow: 5px 5px 0px 0px var(--color-accent);
+        color: var(--color-text);
+        text-align: center;
+        font-size: 3rem;
+    }
+}
