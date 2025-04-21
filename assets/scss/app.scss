@@ -301,3 +301,40 @@
     }
 }
 
+/* Testimonials */
+.testimonials {
+    &__list {
+        margin: 3rem;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        &:nth-child(n+2) {
+            margin-top: 2rem;
+        }
+
+        &:nth-child(even) .testimonials__img {
+            order: 1;
+        }
+    }
+
+    &__img {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        box-shadow: 4px 8px 8px rgba(0,0,0, 0.35);       
+    }
+
+    &__text {
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 2px 12px 20px 6px rgba(0,0,0,0.1);
+
+        p:nth-child(2) {
+            margin-top: 1rem;
+        }
+    }
+}
