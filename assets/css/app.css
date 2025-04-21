@@ -1,0 +1,291 @@
+:root {
+  /* App Colors */
+  --color-primary: var(--color-black);
+  --color-primary--variant: var(--color-gray);
+  --color-accent: var(--color-blue);
+  --color-accent--variant: var(--color-orange);
+  --color-text: var(--color-white);
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #050a13;
+  --color-blue: #03e8f9;
+  --color-orange: #fd6413;
+  --color-gray: #1b1e26;
+  /* Size */
+  --size-max-width: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, p, ul {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color--text);
+}
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+button:focus {
+  outline: 1px solid var(--color-accent);
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/Pretendard-Light.woff2") format("woff2");
+  unicode-range: U+AC00-D7A3, U+1100-11FF, U+3130-318F;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Pretendard-Regular.woff2") format("woff2");
+  unicode-range: U+AC00-D7A3, U+1100-11FF, U+3130-318F;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Pretendard-Bold.woff2") format("woff2");
+  unicode-range: U+AC00-D7A3, U+1100-11FF, U+3130-318F;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/OpenSans-Light.woff2") format("woff2");
+  unicode-range: U+0020-007F;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2");
+  unicode-range: U+0020-007F;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2");
+  unicode-range: U+0020-007F;
+}
+body {
+  font-family: "Pretendard", "Open Sans", sans-serif;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+.site-header__logo-link {
+  display: block;
+  padding: 4px;
+  font-size: 1.5rem;
+}
+
+.site-menu__content {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.site-menu__link {
+  display: block;
+  padding: 8px 12px;
+  border-bottom: 1px solid transparent;
+}
+.site-menu__link:hover {
+  border-bottom: 1px solid var(--color-accent);
+}
+.site-menu__link--active {
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
+}
+
+/* Common */
+.section {
+  padding: 4rem;
+  text-align: center;
+}
+.section__header-title {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
+.section__header-description {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.max-width {
+  max-width: var(--size-max-width);
+  margin: 0 auto;
+}
+
+/* Home */
+.home {
+  padding: 7rem 5rem 5rem;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  text-align: center;
+}
+.home__profile {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 3px solid var(--color-accent);
+  border-radius: 100%;
+}
+.home__title {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
+.home__title--strong {
+  color: var(--color-accent);
+}
+.home__text {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+.home__button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-accent);
+  border-radius: 4px;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+.home__button:hover {
+  background-color: transparent;
+  color: var(--color-text);
+  outline: 2px solid var(--color-accent);
+}
+
+/* About */
+.about__contents {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 3rem 0;
+}
+.about__major {
+  cursor: default;
+  padding: 2rem;
+  background-color: var(--color-primary--variant);
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.35);
+  border-radius: 1rem;
+  color: var(--color-text);
+}
+.about__major-icon {
+  margin: 1rem 0;
+  color: var(--color-accent);
+  font-size: 4rem;
+  transition: all 0.5s ease;
+}
+.about__major-title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.about__major:hover .about__major-icon {
+  transform: scale(1.2);
+}
+.about__experience {
+  text-align: left;
+}
+.about__experience-list:not(:first-of-type) {
+  margin-top: 1rem;
+}
+.about__experience-name, .about__experience-period {
+  color: var(--color-primary);
+}
+.about__experience-name {
+  font-size: 1.2rem;
+}
+
+/* Skills */
+.skills {
+  background-color: var(--color-primary--variant);
+  color: var(--color-text);
+}
+.skills-contents {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  margin: 2rem;
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+}
+.skills-contents__list {
+  padding: 2rem;
+}
+.skills-contents__coding {
+  grid-row: span 2;
+  background-color: var(--color-primary);
+}
+.skills-contents__tools {
+  background-color: var(--color-primary);
+  filter: brightness(150%);
+}
+.skills-contents__title {
+  margin: 1rem 0;
+  color: var(--color-accent);
+  font-size: 1.2rem;
+}
+.skills-contents__description {
+  line-height: 1.8;
+}
+.skills .bar__item {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 0.8rem;
+}
+.skills .bar__data {
+  display: flex;
+  justify-content: space-between;
+}
+.skills .bar__data-icon {
+  margin-right: 5px;
+}
+.skills .bar__bg {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-primary--variant);
+}
+.skills .bar__value {
+  height: 100%;
+  background-color: var(--color-accent);
+}

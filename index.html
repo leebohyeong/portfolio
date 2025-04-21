@@ -27,115 +27,167 @@
     <script src="assets/js/app.js"></script>
   </head>
   <body>
-    <header>
-      <div>
-        <h1><a href="#">Bohyeong&#39;s Portfolio</a></h1>
+    <header class="site-header">
+      <div class="site-header__logo">
+        <h1 class="site-header__logo-text">
+          <a class="site-header__logo-link" href="#"
+            >Bohyeong&#39;s Portfolio</a
+          >
+        </h1>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#work">My Work</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
+      <nav class="site-header__menu site-menu">
+        <ul class="site-menu__content">
+          <li class="site-menu__list">
+            <a class="site-menu__link site-menu__link--active" href="#home"
+              >Home</a
+            >
+          </li>
+          <li class="site-menu__list">
+            <a class="site-menu__link" href="#about">About</a>
+          </li>
+          <li class="site-menu__list">
+            <a class="site-menu__link" href="#skills">Skills</a>
+          </li>
+          <li class="site-menu__list">
+            <a class="site-menu__link" href="#work">My Work</a>
+          </li>
+          <li class="site-menu__list">
+            <a class="site-menu__link" href="#testimonials">Testimonials</a>
+          </li>
+          <li class="site-menu__list">
+            <a class="site-menu__link" href="#contact">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
     <!-- Main -->
     <main>
       <!-- Home -->
-      <section id="home">
-        <img src="assets/images/profile.png" alt="Bohyeong's profile" />
-        <h2>
-          Clean Code. <br />
-          Pixel Perfect.
+      <section id="home" class="home">
+        <img
+          class="home__profile"
+          src="assets/images/profile.png"
+          alt="Bohyeong's profile"
+        />
+        <h2 class="home__title">
+          <strong class="home__title--strong">Clean</strong> Code. <br />
+          Pixel <strong class="home__title--strong">Perfect.</strong>
         </h2>
-        <p>깔끔하게, 제대로.</p>
-        <a href="#contact">Contact Me</a>
+        <p class="home__text">깔끔하게, 제대로.</p>
+        <a class="home__button" href="#contact">Contact Me</a>
       </section>
       <!-- About -->
-      <section id="about">
-        <header>
-          <h2>About me</h2>
-          <p>
-            효율적인 협업, 명확한 의사소통, 그리고 빠른 문제 해결. 저는 팀과
-            함께 성장하는 퍼블리셔입니다.
+      <section id="about" class="section max-width about">
+        <header class="section__header">
+          <h2 class="section__header-title">About me</h2>
+          <p class="section__header-description">
+            효율적인 협업, 명확한 의사소통, 그리고 빠른 문제 해결. <br />
+            저는 팀과 함께 성장하는 퍼블리셔입니다.
           </p>
         </header>
-        <div>
-          <div>
-            <i class="fa-brands fa-html5"></i>
-            <p>Front-end</p>
-            <p>HTML, CSS, SCSS, JavaScript, Jquery</p>
+        <div class="about__contents">
+          <div class="about__major">
+            <i class="fa-brands fa-html5 about__major-icon"></i>
+            <p class="about__major-title">Front-end</p>
+            <p class="about__major-description">HTML, CSS, SCSS, JavaScript</p>
           </div>
-          <ul>
-            <li>
-              <p>애드쿠아인터렉티브 | 콘텐츠 커뮤니케이션 본부</p>
-              <p>2023.08 ~ 2024.02</p>
+          <ul class="about__experience">
+            <li class="about__experience-list">
+              <p class="about__experience-name">
+                애드쿠아인터렉티브 | 콘텐츠 커뮤니케이션 본부
+              </p>
+              <p class="about__experience-period">2023.08 ~ 2024.02</p>
             </li>
-            <li>
-              <p>그룹아이디디 | 퍼블리셔팀</p>
-              <p>2021.07 ~ 2023.08</p>
+            <li class="about__experience-list">
+              <p class="about__experience-name">그룹아이디디 | 퍼블리셔팀</p>
+              <p class="about__experience-period">2021.07 ~ 2023.08</p>
             </li>
-            <li>
-              <p>웹모아 | 퍼블리셔팀</p>
-              <p>2019.11 ~ 2021.05</p>
+            <li class="about__experience-list">
+              <p class="about__experience-name">웹모아 | 퍼블리셔팀</p>
+              <p class="about__experience-period">2019.11 ~ 2021.05</p>
             </li>
-            <li><p>웹디자인 기능사</p></li>
-            <li><p>웹 전문교육기관 700시간 수료</p></li>
+            <li class="about__experience-list">
+              <p class="about__experience-name">웹디자인 기능사</p>
+            </li>
+            <li class="about__experience-list">
+              <p class="about__experience-name">웹 전문교육기관 700시간 수료</p>
+            </li>
           </ul>
         </div>
       </section>
       <!-- Skills -->
-      <section id="skills">
-        <header>
-          <h2>My Skills</h2>
-          <p>Skills &amp; Attributes</p>
-        </header>
-        <div>
-          <section>
-            <h3>Coding Skills</h3>
-            <ul>
-              <li>
-                <i class="fa-brands fa-html5"></i>
-                <div><span>HTML</span><span>98%</span></div>
-                <div style="width: 98%"></div>
-              </li>
-              <li>
-                <i class="fa-brands fa-css"></i>
-                <div><span>CSS</span><span>90%</span></div>
-                <div style="width: 90%"></div>
-              </li>
-              <li>
-                <i class="fa-brands fa-js"></i>
-                <div><span>JavaScript</span><span>80%</span></div>
-                <div style="width: 80%"></div>
-              </li>
-            </ul>
-          </section>
-          <section>
-            <h3>Skill Overview</h3>
-            <p>
-              웹 접근성과 SEO를 고려한 마크업을 기반으로, HTML/CSS/JavaScript를
-              활용해 인터랙티브한 웹사이트를 제작할 수 있습니다.
-            </p>
-          </section>
-          <section>
-            <h3>Tools</h3>
-            <ul>
-              <li>Visual Studio Code</li>
-              <li>Intellij</li>
-              <li>Git</li>
-            </ul>
-          </section>
+      <section id="skills" class="section skills">
+        <div class="skills__container max-width">
+          <header class="section__header">
+            <h2 class="section__header-title">My Skills</h2>
+            <p class="section__header-description">Skills &amp; Attributes</p>
+          </header>
+          <div class="skills-contents">
+            <section class="skills-contents__list skills-contents__coding">
+              <h3 class="skills-contents__title">Coding Skills</h3>
+              <ul class="bar">
+                <li class="bar__item">
+                  <div class="bar__data">
+                    <div>
+                      <i class="fa-brands fa-html5 bar__data-icon"></i>
+                      <span>HTML</span>
+                    </div>
+                    <div><span>98%</span></div>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 98%"></div>
+                  </div>
+                </li>
+                <li class="bar__item">
+                  <div class="bar__data">
+                    <div>
+                      <i class="fa-brands fa-css bar__data-icon"></i>
+                      <span>CSS</span>
+                    </div>
+                    <div><span>90%</span></div>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 90%"></div>
+                  </div>
+                </li>
+                <li class="bar__item">
+                  <div class="bar__data">
+                    <div>
+                      <i class="fa-brands fa-js bar__data-icon"></i>
+                      <span>JavaScript</span>
+                    </div>
+                    <div><span>80%</span></div>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 80%"></div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <section class="skills-contents__list skills-contents__overview">
+              <h3 class="skills-contents__title">Skill Overview</h3>
+              <p class="skills-contents__description">
+                웹 접근성과 SEO를 고려한 마크업을 기반으로,
+                HTML/CSS/JavaScript를 활용해 인터랙티브한 웹사이트를 제작할 수
+                있습니다.
+              </p>
+            </section>
+            <section class="skills-contents__list skills-contents__tools">
+              <h3 class="skills-contents__title">Tools</h3>
+              <ul>
+                <li>Visual Studio Code</li>
+                <li>Intellij</li>
+                <li>Git</li>
+              </ul>
+            </section>
+          </div>
         </div>
       </section>
       <!-- Work -->
-      <section id="work">
-        <header>
-          <h2>My Work</h2>
-          <p>Projects</p>
+      <section id="work" class="section work">
+        <header class="section__header">
+          <h2 class="section__header-title">My work</h2>
+          <p class="section__header-description">Projects</p>
         </header>
         <ul>
           <li>
@@ -272,10 +324,10 @@
         </ul>
       </section>
       <!-- Testimonials -->
-      <section id="testimoials">
-        <header>
-          <h2>Testimonials</h2>
-          <p>Team Member Reviews</p>
+      <section id="testimonials" class="section testimonials">
+        <header class="section__header">
+          <h2 class="section__header-title">Testimonials</h2>
+          <p class="section__header-description">Team Member Reviews</p>
         </header>
         <ul>
           <li>

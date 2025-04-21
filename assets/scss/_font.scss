@@ -1,0 +1,47 @@
+$font-path:"../fonts/";
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+$pretendard: (
+  $font-weight-light: 'Light',
+  $font-weight-regular: 'Regular',
+  $font-weight-bold: 'Bold'
+);
+
+$opensans: (
+  $font-weight-light: 'Light',
+  $font-weight-regular: 'Regular',
+  $font-weight-bold: 'Bold'
+);
+
+// Pretendard (국문)
+@each $weight, $suffix in $pretendard {
+  @font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: $weight;
+    font-display: swap;
+    src: url("#{$font-path}Pretendard-#{$suffix}.woff2") format("woff2");
+    unicode-range: U+AC00-D7A3, U+1100-11FF, U+3130-318F;
+  }
+}
+
+// Open Sans (영문)
+@each $weight, $suffix in $opensans {
+  @font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: $weight;
+    font-display: swap;
+    src: url("#{$font-path}OpenSans-#{$suffix}.woff2") format("woff2");
+    unicode-range: U+0020-007F;
+  }
+}
+
+$font-family: "Pretendard", "Open Sans", sans-serif;
+
+body {
+    font-family: $font-family;
+}

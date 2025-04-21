@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "sass --no-source-map assets/scss/app.scss:assets/css/app.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leebohyeong/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leebohyeong/portfolio/issues"
+  },
+  "homepage": "https://github.com/leebohyeong/portfolio#readme",
+  "devDependencies": {
+    "sass": "^1.86.3"
+  }
+}
