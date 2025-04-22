@@ -48,8 +48,14 @@
     z-index: 1;
     width: 100%;
     padding: 1rem;
-    background-color: var(--color-primary);
+    box-shadow: 4px 8px 8px rgba(0,0,0, 0.35);
+    background-color: transparent;
     color: var(--color-text);
+    transition: all 0.3 ease;
+
+    &--dark {
+        background-color: var(--color-primary);
+    }
 
     @include media('tablet') {
         flex-direction: column;

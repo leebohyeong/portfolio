@@ -11,7 +11,7 @@
   --color-white: #fff;
   --color-black: #050a13;
   --color-blue: #03e8f9;
-  --color-orange: #fd6413;
+  --color-orange: #ff764a;
   --color-gray: #1b1e26;
   /* Size */
   --size-max-width: 1200px;
@@ -147,8 +147,13 @@ body {
   z-index: 1;
   width: 100%;
   padding: 1rem;
-  background-color: var(--color-primary);
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.35);
+  background-color: transparent;
   color: var(--color-text);
+  transition: all 0.3 ease;
+}
+.site-header--dark {
+  background-color: var(--color-primary);
 }
 @media (max-width: 768px) {
   .site-header {

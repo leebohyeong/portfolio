@@ -24,7 +24,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="assets/css/app.css" />
-    <script src="assets/js/app.js"></script>
+    <script defer src="assets/js/app.js"></script>
   </head>
   <body>
     <header class="site-header">
@@ -64,17 +64,19 @@
     <main>
       <!-- Home -->
       <section id="home" class="home">
-        <img
-          class="home__profile"
-          src="assets/images/profile.png"
-          alt="Bohyeong's profile"
-        />
-        <h2 class="home__title">
-          <strong class="home__title--strong">Clean</strong> Code. <br />
-          Pixel <strong class="home__title--strong">Perfect.</strong>
-        </h2>
-        <p class="home__text">깔끔하게, 제대로.</p>
-        <a class="home__button" href="#contact">Contact Me</a>
+        <div class="home__container">
+          <img
+            class="home__profile"
+            src="assets/images/profile.png"
+            alt="Bohyeong's profile"
+          />
+          <h2 class="home__title">
+            <strong class="home__title--strong">Clean</strong> Code. <br />
+            Pixel <strong class="home__title--strong">Perfect.</strong>
+          </h2>
+          <p class="home__text">깔끔하게, 제대로.</p>
+          <a class="home__button" href="#contact">Contact Me</a>
+        </div>
       </section>
       <!-- About -->
       <section id="about" class="section max-container about">
@@ -89,7 +91,7 @@
           <div class="about__major">
             <i class="fa-brands fa-html5 about__major-icon"></i>
             <p class="about__major-title">Front-end</p>
-            <p class="about__major-description">HTML, CSS, SCSS, JavaScript</p>
+            <p class="about__major-description">HTML, CSS, JavaScript</p>
           </div>
           <ul class="about__experience">
             <li class="about__experience-list">
