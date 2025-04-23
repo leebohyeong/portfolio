@@ -449,8 +449,13 @@ body {
 .work-projects {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: auto;
   gap: 1rem;
+  transition: all 0.25s ease-out;
+}
+.work-projects.animation-out {
+  opacity: 0.3;
+  transform: scale(0.95) translateY(15px);
 }
 @media (max-width: 768px) {
   .work-projects {

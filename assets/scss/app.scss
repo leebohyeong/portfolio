@@ -125,7 +125,6 @@
     }
 }
 
-
 /* Home */
 .home {
     padding: 7rem 5rem 5rem;
@@ -386,8 +385,14 @@
     &-projects {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: auto;
         gap: 1rem;
+        transition: all 0.25s ease-out;
+
+        &.animation-out {
+            opacity: 0.3;
+            transform: scale(0.95) translateY(15px);
+        }
 
         @include media('tablet') {
             grid-template-columns: repeat(2, 1fr);
