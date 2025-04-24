@@ -1,7 +1,10 @@
-export default {
-  base: "/portfolio/",
+import { defineConfig } from "vite";
 
+export default defineConfig({
+  base: "/portfolio/",
+  root: "src",
   build: {
-    outDir: "docs",
+    outDir: "../docs",
+    emptyOutDir: true,
   },
-};
+});
