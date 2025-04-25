@@ -8,7 +8,7 @@
     text-align: center;
 
     @include media('tablet') {
-        padding: 4rem 2rem;
+        padding: 4rem 1.25rem;
     }
 
     &__header {
@@ -193,16 +193,18 @@
         display: flex;
         justify-content: center;
         gap: 2.5rem;
-        margin: 3rem 0;
+        margin-top: 3rem;
 
         @include media('tablet') {
             flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 2rem;
         }
     }
 
     &__major {
         cursor: default;
-        padding: 2rem;
+        padding: 2rem 3.5rem;
         background-color: var(--color-primary--variant);
         box-shadow: 4px 8px 8px rgba(0,0,0, 0.35);
         border-radius: 1rem;
@@ -227,11 +229,17 @@
 
     }
 
-    &__experience {
+    &__experience-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 4px;
         text-align: left;
+    }
 
+    &__experience {
         &-list:not(:first-of-type) {
-            margin-top: 1rem;
+            margin-top: 0.75rem;
         }
 
         &-name,
@@ -245,6 +253,34 @@
             @include media('tablet') {
                 font-size: 1rem;
             }
+        }
+
+        &-period {
+            @include media('tablet') {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    &__button-container {
+        display: inline-block;
+    }
+
+    &__button {
+        display: inline-block;
+        padding: 5px 0;
+        font-weight: $font-weight-bold;
+        border-radius: 4px;
+
+        &:hover {
+            // transform: translateX(10px);
+            outline: 2px solid var(--color-accent);
+        }
+
+        &-icon {
+            vertical-align: middle;
+            width: 2rem;
+            transform: translateY(-2px);
         }
     }
 }
@@ -264,6 +300,7 @@
 
         @include media('tablet') {
             grid-template-columns: 1fr;
+            margin: 2rem 0;
         }
 
         &__list {
@@ -585,6 +622,20 @@
 
         @include media('tablet') {
             font-size: 1rem;
+        }
+    }
+
+    &__text {
+        @include media('tablet') {
+            line-height: 1.6;
+        }
+
+        br {
+            display: none;
+
+            @include media('tablet') {
+                display: block;
+            }
         }
     }
 
