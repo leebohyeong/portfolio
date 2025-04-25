@@ -127,6 +127,7 @@
 
 /* Home */
 .home {
+    position: relative;
     padding: 7rem 5rem 5rem;
     background-color: var(--color-primary);
     color: var(--color-text);
@@ -184,6 +185,20 @@
             color: var(--color-text);
             outline: 2px solid var(--color-accent);
         }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: calc(121% + 1.3px);
+        height: 50px;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+        background-color: var(--color-white);
+        mask: var(--divider-single-wave);
     }
 }
 
@@ -287,6 +302,7 @@
 
 /* Skills */
 .skills {
+    position: relative;
     background-color: var(--color-primary--variant);
     color: var(--color-text);
 
@@ -380,6 +396,20 @@
             height: 100%;
             background-color: var(--color-accent);
         }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: calc(139% + 1.3px);
+        height: 47px;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+        background-color: var(--color-primary);
+        mask: var(--divider-double-wave);
     }
 }
 
