@@ -193,12 +193,12 @@
         display: flex;
         justify-content: center;
         gap: 2.5rem;
-        margin-top: 3rem;
+        margin: 3rem 0;
 
         @include media('tablet') {
             flex-direction: column;
             gap: 1.5rem;
-            margin-top: 2rem;
+            margin: 2rem 0 0;
         }
     }
 
@@ -269,12 +269,12 @@
     &__button {
         display: inline-block;
         padding: 5px 0;
-        font-weight: $font-weight-bold;
         border-radius: 4px;
+        font-weight: $font-weight-bold;
+        transition: all .25s ease-in;
 
         &:hover {
-            // transform: translateX(10px);
-            outline: 2px solid var(--color-accent);
+            transform: translateX(10px);
         }
 
         &-icon {
