@@ -588,17 +588,36 @@
         }
     }
 
-    &__link {
-        display: inline-block;
-        margin: 0.5rem 0;
-        padding: 10px;
+    .site-social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin: 1rem 0;
 
-        &:hover {
-            color: var(--color-accent);
+        &__link {
+            display: block;
+            padding: 8px;
+
+            &:hover {
+                color: var(--color-accent);
+
+                .site-social__icon-notion {
+                    background-color: var(--color-accent);   
+                }
+            }
         }
-    }
 
-    &__icon {
-        font-size: 2rem;
+        &__icon {
+            &-github {
+                font-size: 2rem;
+            }
+
+            &-notion {
+                width: 2rem;
+                background-color: var(--color-white);
+                transform: translateY(3px);
+            }
+        }
     }
 }
