@@ -221,6 +221,10 @@
 
     &__major {
         cursor: default;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         padding: 2rem 3.5rem;
         background-color: var(--color-primary--variant);
         box-shadow: 4px 8px 8px rgba(0,0,0, 0.35);
@@ -228,14 +232,13 @@
         color: var(--color-text);
 
         &-icon {
-            margin: 1rem 0;
+            margin-bottom: 1rem;
             color: var(--color-accent);
             font-size: 4rem;
             transition: all 0.5s ease;
         }
 
         &-title {
-            margin-bottom: 1rem;
             font-size: 1.5rem;
             font-weight: $font-weight-bold;
         }
@@ -639,6 +642,7 @@
         position: fixed;
         right: 3rem;
         bottom: 3rem;
+        z-index: 1;
         width: 4.5rem;
         height: 4.5rem;
         background-color: var(--color-primary);
@@ -667,11 +671,28 @@
 
 /* Footer */
 .site-footer {
+    overflow: hidden;
+    position: relative;
     padding: 4rem;
     background-color: var(--color-primary);
     background: var(--home-bg-gradient);
     color: var(--color-text);
     text-align: center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        width: calc(100% + 1.3px);
+        height: 51px;
+        transform: rotateY(180deg);
+        background-color: var(--color-white);
+        mask: var(--divider-single-wave);
+    }
 
     &__title {
         margin: 1rem 0;
