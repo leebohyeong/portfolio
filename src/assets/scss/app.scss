@@ -583,6 +583,9 @@
 /* Testimonials */
 .testimonials {
     &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin: 3rem;
 
         @include media('mobile') {
