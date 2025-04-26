@@ -2,6 +2,7 @@ import "../scss/app.scss";
 
 import "./active_menu.js";
 import "./project.js";
+import "./type.js";
 
 // Header Menu
 {
