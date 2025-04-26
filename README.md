@@ -5,7 +5,7 @@
 - **배포 주소** : https://bohyeong.com/
 - **제작 기간** : 2025.04.14 ~ 계속 업데이트중
 - **제작 도구** : VSCode
-- **사용 기술** : HTML5, CSS3, SCSS, JavaSCrit, Git, Vite
+- **사용 기술** : HTML5, CSS3, SCSS, JavaScript, Git, Vite
 
 ## 프로젝트 설명
 
