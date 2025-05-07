@@ -28,7 +28,7 @@
 ```bash
 git clone https://github.com/leebohyeong/portfolio.git
 cd portfolio
-npm instal
+npm install
 npm run dev
 ```
 
